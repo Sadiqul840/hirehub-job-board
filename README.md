@@ -1,16 +1,76 @@
-# React + Vite
+# HireHub Job Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+HireHub Job Board is a React-based web application that allows users to browse available jobs, search for jobs, filter jobs by location, view job details, and save jobs for later viewing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Home Page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Modern landing page
+* Job statistics section
+* Browse Jobs call-to-action button
 
-## Expanding the ESLint configuration
+### Job Listings
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* View all available jobs
+* Search jobs by title
+* Filter jobs by location
+
+### Job Details
+
+* Detailed job information
+* Company details
+* Job type and location
+* Save Job functionality
+
+### Saved Jobs
+
+* Stores saved jobs using LocalStorage
+* View previously saved jobs
+
+### Navigation
+
+* React Router based navigation
+* Home, Jobs, and Saved Jobs pages
+
+## Technology Stack
+
+* React
+* Vite
+* React Router DOM
+* JavaScript
+* CSS
+* LocalStorage
+
+## CI/CD
+
+GitHub Actions workflow automatically:
+
+* Installs dependencies
+* Builds the application
+* Validates successful builds on every push to the main branch
+
+## Deployment
+
+Application deployed using Vercel.
+
+## Project Structure
+
+src/
+├── components/
+│ └── Navbar.jsx
+├── data/
+│ └── jobs.js
+├── pages/
+│ ├── Home.jsx
+│ ├── Jobs.jsx
+│ ├── JobDetails.jsx
+│ └── SavedJobs.jsx
+├── App.jsx
+└── main.jsx
+
+## Author
+
+Sadiqul Ameen
