@@ -6,24 +6,31 @@ export default function Navbar() {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        padding: "20px",
-        borderBottom: "1px solid gray",
+        alignItems: "center",
+        padding: "20px 60px",
+        background: "#111827",
+        borderBottom: "1px solid #1f2937",
       }}
     >
-      <h2>HireHub</h2>
+      <h2
+        style={{
+          color: "#3b82f6",
+          fontSize: "30px",
+        }}
+      >
+        HireHub
+      </h2>
 
-      <div>
-        <Link to="/" style={{ marginRight: "20px" }}>
-          Home
-        </Link>
-
-        <Link to="/jobs" style={{ marginRight: "20px" }}>
-          Jobs
-        </Link>
-
-        <Link to="/saved">
-          Saved Jobs
-        </Link>
+      <div
+        style={{
+          display: "flex",
+          gap: "30px",
+          fontSize: "18px",
+        }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/jobs">Jobs</Link>
+        <Link to="/saved">Saved Jobs</Link>
       </div>
     </nav>
   );
